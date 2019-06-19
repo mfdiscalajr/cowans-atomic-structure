@@ -1,0 +1,16 @@
+--- Makefile	2011-01-12 10:46:55.000000000 -0500
++++ Makefilecopy	2019-06-09 20:04:49.000000000 -0400
+@@ -17,7 +17,12 @@
+ 	tar zxvf CowanScripts.tgz; \
+ 	tar zxvf CowanUtilities.tgz; \
+ 	tar zxvf CowanDocumentation.tgz; \
+-	echo 'Unpacking complete!'
++	echo 'Unpacking complete!'; \
++	echo 'Patching makefile for g77'; \
++	patch -d Code Makefile < /PatchFiles/Code_g77.patch; \
++	patch -d Utilities Makefile,v < /PatchFiles/Utilities_g77.patch; \
++
++	echo 'Patching complete!'
+
+ code:
+ 	@(cd Code; make )
