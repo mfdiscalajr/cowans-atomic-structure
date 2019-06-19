@@ -1,6 +1,5 @@
 FROM centos:6.10
 
-
 ADD /PatchFiles/ PatchFiles/
 
 RUN yum update;\

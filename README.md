@@ -62,7 +62,7 @@ cp -a /usr/local/cowan/html/ /data/Documentation
 cp -a /usr/local/cowan/doc/ /data/Documentation
 ```
 A **very important** note, any changes made outside of ```/data``` will be deleted when the container is closed. 
-As we are on CentOs, you can use ```yum install``` to install any other dependencies you would like to download.
+As we are on CentOS, you can use ```yum install``` to install any other dependencies you would like to download.
 
 To exit the image, simply type ``` exit``` into your terminal.
 If you want to close any open container you have open, enter:
