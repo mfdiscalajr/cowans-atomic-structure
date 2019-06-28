@@ -3,8 +3,6 @@ FROM centos:6.10
 ADD /PatchFiles/ PatchFiles/
 
 RUN yum update;\
-    # Add User
-    #useradd -ms /bin/bash cowan;\
     # Install Dependencies
     echo INSTALLING DEPENDENCIES...;\
     yum -y install sudo;\
